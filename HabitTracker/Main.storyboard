@@ -1,0 +1,1246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WCB-X1-Kpe">
+<device id="retina6_12" orientation="portrait" appearance="dark"/>
+<dependencies>
+<deployment identifier="iOS"/>
+<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+<capability name="Safe area layout guides" minToolsVersion="9.0"/>
+<capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+</dependencies>
+<scenes>
+<scene sceneID="ZWZ-TC-sHP">
+<objects>
+<viewController id="WCB-X1-Kpe" customClass="SplashViewController" customModule="HabitTracker" customModuleProvider="target" sceneMemberID="viewController">
+<view key="view" contentMode="scaleToFill" id="0lR-8a-cRY">
+<rect key="frame" x="0" y="0" width="390" height="844"/>
+<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<subviews>
+<imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="jOC-s4-bWY">
+<rect key="frame" x="143" y="300" width="104" height="104"/>
+<constraints>
+<constraint firstAttribute="width" constant="104" id="Bnu-3m-Y2l"/>
+<constraint firstAttribute="height" constant="104" id="hm1-2F-Pzm"/>
+</constraints>
+</imageView>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Habit Tracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TI6-wL-qee" customClass="HTLabel" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="115" y="428" width="160" height="36"/>
+<fontDescription key="fontDescription" type="system" weight="bold" pointSize="30"/>
+<color key="textColor" red="1.000000000" green="1.000000000" blue="1.000000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="kern"><real key="value" value="0.2"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Small steps, every day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hq1-Pk-CJV">
+<rect key="frame" x="115" y="472" width="160" height="18"/>
+<fontDescription key="fontDescription" type="system" pointSize="15"/>
+<color key="textColor" red="0.690196078" green="0.690196078" blue="0.752941176" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uoY-qL-Rqr" customClass="ProgressBarView" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="115" y="714" width="160" height="6"/>
+<constraints>
+<constraint firstAttribute="width" constant="160" id="cC4-da-vDs"/>
+<constraint firstAttribute="height" constant="6" id="REy-mZ-zoU"/>
+</constraints>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="progress"><real key="value" value="0.6"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</view>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading your habits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZK-iG-vbt">
+<rect key="frame" x="115" y="732" width="160" height="16"/>
+<fontDescription key="fontDescription" type="system" pointSize="13"/>
+<color key="textColor" red="0.541176471" green="0.541176471" blue="0.639215686" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+</subviews>
+<viewLayoutGuide key="safeArea" id="Si4-MD-F8k"/>
+<color key="backgroundColor" red="0.058823529" green="0.058823529" blue="0.082352941" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="jOC-s4-bWY" firstAttribute="centerX" secondItem="0lR-8a-cRY" secondAttribute="centerX" id="cj7-bs-HXD"/>
+<constraint firstItem="jOC-s4-bWY" firstAttribute="top" secondItem="0lR-8a-cRY" secondAttribute="top" constant="300" id="YzE-zV-MGP"/>
+<constraint firstItem="TI6-wL-qee" firstAttribute="centerX" secondItem="0lR-8a-cRY" secondAttribute="centerX" id="V4e-Ak-5M7"/>
+<constraint firstItem="TI6-wL-qee" firstAttribute="top" secondItem="jOC-s4-bWY" secondAttribute="bottom" constant="24" id="ByF-gD-cEW"/>
+<constraint firstItem="Hq1-Pk-CJV" firstAttribute="centerX" secondItem="0lR-8a-cRY" secondAttribute="centerX" id="7AK-W3-gc3"/>
+<constraint firstItem="Hq1-Pk-CJV" firstAttribute="top" secondItem="TI6-wL-qee" secondAttribute="bottom" constant="8" id="FnJ-xF-kQj"/>
+<constraint firstItem="xZK-iG-vbt" firstAttribute="centerX" secondItem="0lR-8a-cRY" secondAttribute="centerX" id="VDZ-Ru-cq2"/>
+<constraint firstItem="xZK-iG-vbt" firstAttribute="bottom" secondItem="0lR-8a-cRY" secondAttribute="bottom" constant="-96" id="zyw-8G-OuL"/>
+<constraint firstItem="uoY-qL-Rqr" firstAttribute="centerX" secondItem="0lR-8a-cRY" secondAttribute="centerX" id="faf-i1-Jrp"/>
+<constraint firstItem="uoY-qL-Rqr" firstAttribute="bottom" secondItem="xZK-iG-vbt" secondAttribute="top" constant="-12" id="RWB-JG-9en"/>
+</constraints>
+</view>
+<connections>
+<outlet property="progressBar" destination="uoY-qL-Rqr" id="Ix1-AT-drd"/>
+<segue destination="8nD-X7-rnx" kind="presentation" identifier="showMain" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="17o-RE-BuA"/>
+</connections>
+</viewController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="yy2-tU-Plk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="-900" y="0"/>
+</scene>
+<scene sceneID="SfX-PS-rJs">
+<objects>
+<navigationController id="8nD-X7-rnx" customClass="HTNavigationController" customModule="HabitTracker" customModuleProvider="target" sceneMemberID="viewController">
+<navigationBar key="navigationBar" contentMode="scaleToFill" id="Urf-7u-kYj">
+<rect key="frame" x="0.0" y="47" width="390" height="44"/>
+<autoresizingMask key="autoresizingMask"/>
+</navigationBar>
+<connections>
+<segue destination="JS9-6K-27B" kind="relationship" relationship="rootViewController" id="wgV-D8-IrD"/>
+</connections>
+</navigationController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="xNl-LF-bZt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="-300" y="0"/>
+</scene>
+<scene sceneID="D0V-Xa-cQk">
+<objects>
+<viewController id="JS9-6K-27B" customClass="TodayViewController" customModule="HabitTracker" customModuleProvider="target" sceneMemberID="viewController">
+<view key="view" contentMode="scaleToFill" id="f37-wv-vbc">
+<rect key="frame" x="0" y="0" width="390" height="844"/>
+<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<subviews>
+<button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tsd-aZ-36J" customClass="NavButton" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="294" y="56" width="44" height="44"/>
+<constraints>
+<constraint firstAttribute="height" constant="44" id="cch-Oa-iR4"/>
+<constraint firstAttribute="width" constant="44" id="OkT-cZ-NWe"/>
+</constraints>
+<accessibility key="accessibilityConfiguration" label="Statistics"/>
+<fontDescription key="fontDescription" type="system" pointSize="17"/>
+<state key="normal"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="string" keyPath="iconName" value="chart"/>
+</userDefinedRuntimeAttributes>
+<connections>
+<segue destination="eyJ-27-1r9" kind="show" identifier="showStats" id="xpg-OU-UYw"/>
+</connections>
+</button>
+<button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gir-I0-92n" customClass="NavButton" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="338" y="56" width="44" height="44"/>
+<constraints>
+<constraint firstAttribute="height" constant="44" id="Dqr-0j-LY8"/>
+<constraint firstAttribute="width" constant="44" id="ugi-kB-n7Y"/>
+</constraints>
+<accessibility key="accessibilityConfiguration" label="Add habit"/>
+<fontDescription key="fontDescription" type="system" pointSize="17"/>
+<state key="normal"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="string" keyPath="iconName" value="plus"/>
+<userDefinedRuntimeAttribute type="number" keyPath="iconStroke"><real key="value" value="2"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+<connections>
+<segue destination="KG2-Pf-LWf" kind="show" identifier="showNewHabit" id="Wph-9W-51r"/>
+</connections>
+</button>
+<scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOt-vZ-RB2">
+<rect key="frame" x="0" y="100" width="390" height="744"/>
+<subviews>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TM8-p6-nlG">
+<rect key="frame" x="0" y="0" width="390" height="688"/>
+<subviews>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tuesday, November 24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoa-HT-7Hr">
+<rect key="frame" x="16" y="4" width="358" height="18"/>
+<fontDescription key="fontDescription" type="system" pointSize="15"/>
+<color key="textColor" red="0.690196078" green="0.690196078" blue="0.752941176" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGD-xf-EpP" customClass="HTLabel" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="16" y="22" width="358" height="41"/>
+<fontDescription key="fontDescription" type="system" weight="bold" pointSize="34"/>
+<color key="textColor" red="1.000000000" green="1.000000000" blue="1.000000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="kern"><real key="value" value="0.2"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</label>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JCk-mZ-Bk6">
+<rect key="frame" x="16" y="79" width="358" height="109"/>
+<subviews>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sp8-DL-Ysx">
+<rect key="frame" x="16" y="14" width="60" height="14"/>
+<fontDescription key="fontDescription" type="system" pointSize="12"/>
+<color key="textColor" red="0.541176471" green="0.541176471" blue="0.639215686" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="240 XP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oD-u6-SBw">
+<rect key="frame" x="16" y="28" width="110" height="31"/>
+<fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+<color key="textColor" red="0.960784314" green="0.619607843" blue="0.043137255" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 day streak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpL-Th-BjY">
+<rect key="frame" x="260" y="42" width="98" height="17"/>
+<fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+<color key="textColor" red="0.960784314" green="0.619607843" blue="0.043137255" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5K-cf-eCf" customClass="ProgressBarView" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="16" y="69" width="326" height="6"/>
+<constraints>
+<constraint firstAttribute="height" constant="6" id="5eH-vO-fW6"/>
+</constraints>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="progress"><real key="value" value="0.4"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</view>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60 XP to Level 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6C-fp-QMy">
+<rect key="frame" x="16" y="81" width="110" height="14"/>
+<fontDescription key="fontDescription" type="system" pointSize="12"/>
+<color key="textColor" red="0.541176471" green="0.541176471" blue="0.639215686" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+</subviews>
+<color key="backgroundColor" red="0.101960784" green="0.101960784" blue="0.180392157" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="sp8-DL-Ysx" firstAttribute="leading" secondItem="JCk-mZ-Bk6" secondAttribute="leading" constant="16" id="ozA-0G-NGI"/>
+<constraint firstItem="sp8-DL-Ysx" firstAttribute="top" secondItem="JCk-mZ-Bk6" secondAttribute="top" constant="14" id="ZTj-Tm-7XJ"/>
+<constraint firstItem="2oD-u6-SBw" firstAttribute="leading" secondItem="JCk-mZ-Bk6" secondAttribute="leading" constant="16" id="YMF-CS-GzT"/>
+<constraint firstItem="2oD-u6-SBw" firstAttribute="top" secondItem="sp8-DL-Ysx" secondAttribute="bottom" id="mr3-wI-RVR"/>
+<constraint firstItem="LpL-Th-BjY" firstAttribute="trailing" secondItem="JCk-mZ-Bk6" secondAttribute="trailing" constant="-16" id="aeT-1j-POB"/>
+<constraint firstItem="LpL-Th-BjY" firstAttribute="bottom" secondItem="2oD-u6-SBw" secondAttribute="bottom" id="wH3-oX-QWQ"/>
+<constraint firstItem="i5K-cf-eCf" firstAttribute="leading" secondItem="JCk-mZ-Bk6" secondAttribute="leading" constant="16" id="SKq-M5-oQR"/>
+<constraint firstItem="i5K-cf-eCf" firstAttribute="trailing" secondItem="JCk-mZ-Bk6" secondAttribute="trailing" constant="-16" id="UDv-FS-2a9"/>
+<constraint firstItem="i5K-cf-eCf" firstAttribute="top" secondItem="2oD-u6-SBw" secondAttribute="bottom" constant="10" id="9kz-ex-IJ9"/>
+<constraint firstItem="f6C-fp-QMy" firstAttribute="leading" secondItem="JCk-mZ-Bk6" secondAttribute="leading" constant="16" id="4Sz-xw-LXw"/>
+<constraint firstItem="f6C-fp-QMy" firstAttribute="top" secondItem="i5K-cf-eCf" secondAttribute="bottom" constant="6" id="cXH-Ls-t1J"/>
+<constraint firstItem="f6C-fp-QMy" firstAttribute="bottom" secondItem="JCk-mZ-Bk6" secondAttribute="bottom" constant="-14" id="lm3-zD-IhB"/>
+</constraints>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius"><integer key="value" value="14"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</view>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gY3-ow-Udu">
+<rect key="frame" x="16" y="208" width="120" height="18"/>
+<fontDescription key="fontDescription" type="system" pointSize="15"/>
+<color key="textColor" red="0.690196078" green="0.690196078" blue="0.752941176" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 / 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbn-Ii-xlY">
+<rect key="frame" x="330" y="208" width="44" height="18"/>
+<fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+<color key="textColor" red="1.000000000" green="1.000000000" blue="1.000000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30z-xp-Dlw" customClass="ProgressBarView" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="16" y="234" width="358" height="6"/>
+<constraints>
+<constraint firstAttribute="height" constant="6" id="6Ck-hr-ojW"/>
+</constraints>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="progress"><real key="value" value="0.6"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</view>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finish all 5 for a +20 XP perfect day bonus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAg-r4-LAh">
+<rect key="frame" x="16" y="246" width="300" height="14"/>
+<fontDescription key="fontDescription" type="system" pointSize="12"/>
+<color key="textColor" red="0.541176471" green="0.541176471" blue="0.639215686" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mJP-jN-M9t">
+<rect key="frame" x="16" y="284" width="358" height="380"/>
+</stackView>
+</subviews>
+<constraints>
+<constraint firstItem="qoa-HT-7Hr" firstAttribute="leading" secondItem="TM8-p6-nlG" secondAttribute="leading" constant="16" id="AoP-ck-Cnb"/>
+<constraint firstItem="qoa-HT-7Hr" firstAttribute="top" secondItem="TM8-p6-nlG" secondAttribute="top" constant="4" id="UAS-pE-QoB"/>
+<constraint firstItem="bGD-xf-EpP" firstAttribute="leading" secondItem="TM8-p6-nlG" secondAttribute="leading" constant="16" id="5Wy-6A-vXI"/>
+<constraint firstItem="bGD-xf-EpP" firstAttribute="top" secondItem="qoa-HT-7Hr" secondAttribute="bottom" id="I2N-6d-Ywf"/>
+<constraint firstItem="JCk-mZ-Bk6" firstAttribute="leading" secondItem="TM8-p6-nlG" secondAttribute="leading" constant="16" id="YbP-VZ-z6F"/>
+<constraint firstItem="JCk-mZ-Bk6" firstAttribute="trailing" secondItem="TM8-p6-nlG" secondAttribute="trailing" constant="-16" id="Kgb-0Y-f1G"/>
+<constraint firstItem="JCk-mZ-Bk6" firstAttribute="top" secondItem="bGD-xf-EpP" secondAttribute="bottom" constant="16" id="Vts-gC-nHD"/>
+<constraint firstItem="gY3-ow-Udu" firstAttribute="leading" secondItem="TM8-p6-nlG" secondAttribute="leading" constant="16" id="xMg-q2-77c"/>
+<constraint firstItem="gY3-ow-Udu" firstAttribute="top" secondItem="JCk-mZ-Bk6" secondAttribute="bottom" constant="20" id="N11-eO-Rk8"/>
+<constraint firstItem="Cbn-Ii-xlY" firstAttribute="trailing" secondItem="TM8-p6-nlG" secondAttribute="trailing" constant="-16" id="MPX-XA-8PC"/>
+<constraint firstItem="Cbn-Ii-xlY" firstAttribute="centerY" secondItem="gY3-ow-Udu" secondAttribute="centerY" id="dVG-Ml-u3E"/>
+<constraint firstItem="30z-xp-Dlw" firstAttribute="leading" secondItem="TM8-p6-nlG" secondAttribute="leading" constant="16" id="Ppc-5L-b3x"/>
+<constraint firstItem="30z-xp-Dlw" firstAttribute="trailing" secondItem="TM8-p6-nlG" secondAttribute="trailing" constant="-16" id="WDA-dK-OzM"/>
+<constraint firstItem="30z-xp-Dlw" firstAttribute="top" secondItem="gY3-ow-Udu" secondAttribute="bottom" constant="8" id="m3Z-PF-nUl"/>
+<constraint firstItem="rAg-r4-LAh" firstAttribute="leading" secondItem="TM8-p6-nlG" secondAttribute="leading" constant="16" id="xZ0-nx-Bcp"/>
+<constraint firstItem="rAg-r4-LAh" firstAttribute="top" secondItem="30z-xp-Dlw" secondAttribute="bottom" constant="6" id="CZB-CR-ZJ8"/>
+<constraint firstItem="mJP-jN-M9t" firstAttribute="leading" secondItem="TM8-p6-nlG" secondAttribute="leading" constant="16" id="QTc-O9-Mlk"/>
+<constraint firstItem="mJP-jN-M9t" firstAttribute="trailing" secondItem="TM8-p6-nlG" secondAttribute="trailing" constant="-16" id="CP8-L6-Mqs"/>
+<constraint firstItem="mJP-jN-M9t" firstAttribute="top" secondItem="rAg-r4-LAh" secondAttribute="bottom" constant="24" id="pyx-dv-Lwa"/>
+<constraint firstItem="mJP-jN-M9t" firstAttribute="bottom" secondItem="TM8-p6-nlG" secondAttribute="bottom" constant="-24" id="hfR-9g-s6K"/>
+</constraints>
+</view>
+</subviews>
+<constraints>
+<constraint firstItem="TM8-p6-nlG" firstAttribute="top" secondItem="8ax-hH-Yza" secondAttribute="top" id="oLq-t1-8nR"/>
+<constraint firstItem="TM8-p6-nlG" firstAttribute="bottom" secondItem="8ax-hH-Yza" secondAttribute="bottom" id="3ok-EU-bwq"/>
+<constraint firstItem="TM8-p6-nlG" firstAttribute="leading" secondItem="8ax-hH-Yza" secondAttribute="leading" id="1GB-LV-FeW"/>
+<constraint firstItem="TM8-p6-nlG" firstAttribute="trailing" secondItem="8ax-hH-Yza" secondAttribute="trailing" id="Rus-eA-rLW"/>
+<constraint firstItem="TM8-p6-nlG" firstAttribute="width" secondItem="Uip-Hs-aCw" secondAttribute="width" id="b3X-tU-2NS"/>
+</constraints>
+<viewLayoutGuide key="contentLayoutGuide" id="8ax-hH-Yza"/>
+<viewLayoutGuide key="frameLayoutGuide" id="Uip-Hs-aCw"/>
+</scrollView>
+</subviews>
+<viewLayoutGuide key="safeArea" id="YQo-Ya-JwZ"/>
+<color key="backgroundColor" red="0.058823529" green="0.058823529" blue="0.082352941" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="Gir-I0-92n" firstAttribute="trailing" secondItem="f37-wv-vbc" secondAttribute="trailing" constant="-8" id="a3V-la-4Of"/>
+<constraint firstItem="Gir-I0-92n" firstAttribute="top" secondItem="YQo-Ya-JwZ" secondAttribute="top" constant="9" id="eHh-2U-erI"/>
+<constraint firstItem="Tsd-aZ-36J" firstAttribute="trailing" secondItem="Gir-I0-92n" secondAttribute="leading" id="yzN-en-Mep"/>
+<constraint firstItem="Tsd-aZ-36J" firstAttribute="centerY" secondItem="Gir-I0-92n" secondAttribute="centerY" id="yOZ-Na-xjP"/>
+<constraint firstItem="vOt-vZ-RB2" firstAttribute="top" secondItem="Gir-I0-92n" secondAttribute="bottom" id="1MI-7L-dmB"/>
+<constraint firstItem="vOt-vZ-RB2" firstAttribute="leading" secondItem="f37-wv-vbc" secondAttribute="leading" id="al0-X3-8vc"/>
+<constraint firstItem="vOt-vZ-RB2" firstAttribute="trailing" secondItem="f37-wv-vbc" secondAttribute="trailing" id="v9Q-KM-mQH"/>
+<constraint firstItem="vOt-vZ-RB2" firstAttribute="bottom" secondItem="f37-wv-vbc" secondAttribute="bottom" id="rEH-te-Ez9"/>
+</constraints>
+</view>
+<connections>
+<outlet property="dateLabel" destination="qoa-HT-7Hr" id="HW3-vc-7Ko"/>
+<outlet property="levelLabel" destination="sp8-DL-Ysx" id="kxe-w0-EBp"/>
+<outlet property="xpLabel" destination="2oD-u6-SBw" id="l5o-50-NrH"/>
+<outlet property="streakLabel" destination="LpL-Th-BjY" id="olp-JA-tNF"/>
+<outlet property="xpBar" destination="i5K-cf-eCf" id="4Ev-v5-qan"/>
+<outlet property="toNextLabel" destination="f6C-fp-QMy" id="PrO-go-4K4"/>
+<outlet property="progressCountLabel" destination="Cbn-Ii-xlY" id="vJ7-0r-f0Q"/>
+<outlet property="progressBar" destination="30z-xp-Dlw" id="Cca-Ny-WuJ"/>
+<outlet property="perfectLabel" destination="rAg-r4-LAh" id="72z-ky-JuJ"/>
+<outlet property="habitsStack" destination="mJP-jN-M9t" id="ZfE-WG-QwV"/>
+</connections>
+</viewController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="TqO-JS-rw5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="300" y="0"/>
+</scene>
+<scene sceneID="TDq-9E-8DB">
+<objects>
+<viewController id="eyJ-27-1r9" customClass="StatsViewController" customModule="HabitTracker" customModuleProvider="target" sceneMemberID="viewController">
+<view key="view" contentMode="scaleToFill" id="WRQ-w4-FwU">
+<rect key="frame" x="0" y="0" width="390" height="844"/>
+<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<subviews>
+<button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxZ-PU-3Bz" customClass="NavButton" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="8" y="56" width="72" height="44"/>
+<constraints>
+<constraint firstAttribute="height" constant="44" id="ZEl-UX-8xf"/>
+<constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="XH2-DB-og0"/>
+</constraints>
+<fontDescription key="fontDescription" type="system" pointSize="17"/>
+<state key="normal" title="Today">
+<color key="titleColor" red="0.545098039" green="0.482352941" blue="1.000000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+</state>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="string" keyPath="iconName" value="back"/>
+</userDefinedRuntimeAttributes>
+<connections>
+<action selector="backTapped:" destination="eyJ-27-1r9" eventType="touchUpInside" id="bXa-1x-3A0"/>
+</connections>
+</button>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statistics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NyJ-JR-FDa">
+<rect key="frame" x="160" y="68" width="80" height="20"/>
+<fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+<color key="textColor" red="1.000000000" green="1.000000000" blue="1.000000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1a3-R3-kVm">
+<rect key="frame" x="0" y="100" width="390" height="744"/>
+<subviews>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RqE-eA-k8K">
+<rect key="frame" x="0" y="0" width="390" height="1100"/>
+<subviews>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statistics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7k3-6b-zLC" customClass="HTLabel" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="16" y="4" width="358" height="41"/>
+<fontDescription key="fontDescription" type="system" weight="bold" pointSize="34"/>
+<color key="textColor" red="1.000000000" green="1.000000000" blue="1.000000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="kern"><real key="value" value="0.2"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</label>
+<stackView opaque="NO" contentMode="scaleToFill" axis="horizontal" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="h8J-JN-Q6F">
+<rect key="frame" x="16" y="61" width="358" height="73"/>
+<subviews>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1A-oV-Rqr">
+<rect key="frame" x="0" y="0" width="112.67" height="73"/>
+<subviews>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nah-cG-K0t">
+<rect key="frame" x="12" y="12" width="80" height="13"/>
+<fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+<color key="textColor" red="0.541176471" green="0.541176471" blue="0.639215686" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="71%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpj-uJ-1OA">
+<rect key="frame" x="12" y="27" width="60" height="34"/>
+<fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+<color key="textColor" red="0.717647059" green="0.482352941" blue="0.960784314" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+</subviews>
+<color key="backgroundColor" red="0.101960784" green="0.101960784" blue="0.180392157" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="Nah-cG-K0t" firstAttribute="leading" secondItem="R1A-oV-Rqr" secondAttribute="leading" constant="12" id="GCd-F0-SNG"/>
+<constraint firstItem="Nah-cG-K0t" firstAttribute="top" secondItem="R1A-oV-Rqr" secondAttribute="top" constant="12" id="DfS-nv-Pic"/>
+<constraint firstItem="hpj-uJ-1OA" firstAttribute="leading" secondItem="R1A-oV-Rqr" secondAttribute="leading" constant="12" id="8P5-1p-Kb7"/>
+<constraint firstItem="hpj-uJ-1OA" firstAttribute="top" secondItem="Nah-cG-K0t" secondAttribute="bottom" constant="2" id="mYS-5e-xrQ"/>
+<constraint firstItem="hpj-uJ-1OA" firstAttribute="bottom" secondItem="R1A-oV-Rqr" secondAttribute="bottom" constant="-12" id="mUY-t5-hgA"/>
+</constraints>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius"><integer key="value" value="14"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</view>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="662-cz-6o8">
+<rect key="frame" x="122.67" y="0" width="112.67" height="73"/>
+<subviews>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Streak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OvG-mi-iGS">
+<rect key="frame" x="12" y="12" width="80" height="13"/>
+<fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+<color key="textColor" red="0.541176471" green="0.541176471" blue="0.639215686" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQh-dV-ugF">
+<rect key="frame" x="12" y="27" width="60" height="34"/>
+<fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+<color key="textColor" red="0.203921569" green="0.827450980" blue="0.600000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+</subviews>
+<color key="backgroundColor" red="0.101960784" green="0.101960784" blue="0.180392157" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="OvG-mi-iGS" firstAttribute="leading" secondItem="662-cz-6o8" secondAttribute="leading" constant="12" id="kY6-Az-OUQ"/>
+<constraint firstItem="OvG-mi-iGS" firstAttribute="top" secondItem="662-cz-6o8" secondAttribute="top" constant="12" id="Ef3-A9-1kb"/>
+<constraint firstItem="VQh-dV-ugF" firstAttribute="leading" secondItem="662-cz-6o8" secondAttribute="leading" constant="12" id="SKL-T4-fCT"/>
+<constraint firstItem="VQh-dV-ugF" firstAttribute="top" secondItem="OvG-mi-iGS" secondAttribute="bottom" constant="2" id="cBg-qt-4O7"/>
+<constraint firstItem="VQh-dV-ugF" firstAttribute="bottom" secondItem="662-cz-6o8" secondAttribute="bottom" constant="-12" id="k9J-gB-4a6"/>
+</constraints>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius"><integer key="value" value="14"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</view>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HNJ-DG-4QI">
+<rect key="frame" x="245.34" y="0" width="112.67" height="73"/>
+<subviews>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04J-74-nqA">
+<rect key="frame" x="12" y="12" width="80" height="13"/>
+<fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+<color key="textColor" red="0.541176471" green="0.541176471" blue="0.639215686" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xll-xV-0qe">
+<rect key="frame" x="12" y="27" width="60" height="34"/>
+<fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+<color key="textColor" red="0.956862745" green="0.447058824" blue="0.713725490" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+</subviews>
+<color key="backgroundColor" red="0.101960784" green="0.101960784" blue="0.180392157" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="04J-74-nqA" firstAttribute="leading" secondItem="HNJ-DG-4QI" secondAttribute="leading" constant="12" id="DbW-8G-0v1"/>
+<constraint firstItem="04J-74-nqA" firstAttribute="top" secondItem="HNJ-DG-4QI" secondAttribute="top" constant="12" id="i9v-Cl-Msl"/>
+<constraint firstItem="Xll-xV-0qe" firstAttribute="leading" secondItem="HNJ-DG-4QI" secondAttribute="leading" constant="12" id="ybp-gA-mDe"/>
+<constraint firstItem="Xll-xV-0qe" firstAttribute="top" secondItem="04J-74-nqA" secondAttribute="bottom" constant="2" id="JvM-SU-Yvf"/>
+<constraint firstItem="Xll-xV-0qe" firstAttribute="bottom" secondItem="HNJ-DG-4QI" secondAttribute="bottom" constant="-12" id="Lk7-wU-z5X"/>
+</constraints>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius"><integer key="value" value="14"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</view>
+</subviews>
+</stackView>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1TL-s0-o0B">
+<rect key="frame" x="16" y="144" width="358" height="82"/>
+<subviews>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTZ-7f-oge">
+<rect key="frame" x="16" y="14" width="60" height="18"/>
+<fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+<color key="textColor" red="1.000000000" green="1.000000000" blue="1.000000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="240 XP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mH-HL-tUs">
+<rect key="frame" x="290" y="14" width="68" height="18"/>
+<fontDescription key="fontDescription" type="system" weight="bold" pointSize="15"/>
+<color key="textColor" red="0.960784314" green="0.619607843" blue="0.043137255" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zIt-Vt-LqG" customClass="ProgressBarView" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="16" y="42" width="326" height="6"/>
+<constraints>
+<constraint firstAttribute="height" constant="6" id="ir2-62-u7O"/>
+</constraints>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="progress"><real key="value" value="0.4"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</view>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60 XP to Level 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXs-pi-e0o">
+<rect key="frame" x="16" y="54" width="110" height="14"/>
+<fontDescription key="fontDescription" type="system" pointSize="12"/>
+<color key="textColor" red="0.541176471" green="0.541176471" blue="0.639215686" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+</subviews>
+<color key="backgroundColor" red="0.101960784" green="0.101960784" blue="0.180392157" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="gTZ-7f-oge" firstAttribute="leading" secondItem="1TL-s0-o0B" secondAttribute="leading" constant="16" id="kYF-pJ-yRx"/>
+<constraint firstItem="gTZ-7f-oge" firstAttribute="top" secondItem="1TL-s0-o0B" secondAttribute="top" constant="14" id="202-sf-OvL"/>
+<constraint firstItem="8mH-HL-tUs" firstAttribute="trailing" secondItem="1TL-s0-o0B" secondAttribute="trailing" constant="-16" id="KGT-XU-LNG"/>
+<constraint firstItem="8mH-HL-tUs" firstAttribute="top" secondItem="1TL-s0-o0B" secondAttribute="top" constant="14" id="NuE-z6-e5q"/>
+<constraint firstItem="zIt-Vt-LqG" firstAttribute="leading" secondItem="1TL-s0-o0B" secondAttribute="leading" constant="16" id="nuD-Lq-PYc"/>
+<constraint firstItem="zIt-Vt-LqG" firstAttribute="trailing" secondItem="1TL-s0-o0B" secondAttribute="trailing" constant="-16" id="n4l-xg-Rwh"/>
+<constraint firstItem="zIt-Vt-LqG" firstAttribute="top" secondItem="gTZ-7f-oge" secondAttribute="bottom" constant="10" id="KLS-S1-8Co"/>
+<constraint firstItem="SXs-pi-e0o" firstAttribute="leading" secondItem="1TL-s0-o0B" secondAttribute="leading" constant="16" id="rPv-Ht-tID"/>
+<constraint firstItem="SXs-pi-e0o" firstAttribute="top" secondItem="zIt-Vt-LqG" secondAttribute="bottom" constant="6" id="uBb-JO-Dqv"/>
+<constraint firstItem="SXs-pi-e0o" firstAttribute="bottom" secondItem="1TL-s0-o0B" secondAttribute="bottom" constant="-14" id="yiH-tU-MPE"/>
+</constraints>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius"><integer key="value" value="14"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</view>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTIVITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O68-4p-QF5" customClass="HTLabel" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="16" y="250" width="100" height="13"/>
+<fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+<color key="textColor" red="0.541176471" green="0.541176471" blue="0.639215686" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="kern"><real key="value" value="1"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</label>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jdv-oG-4Ws">
+<rect key="frame" x="16" y="271" width="358" height="216"/>
+<subviews>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQC-AU-nbX" customClass="HeatmapView" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="16" y="16" width="326" height="184"/>
+<constraints>
+<constraint firstAttribute="height" constant="184" id="Ugw-6x-83Z"/>
+</constraints>
+</view>
+</subviews>
+<color key="backgroundColor" red="0.101960784" green="0.101960784" blue="0.180392157" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="aQC-AU-nbX" firstAttribute="leading" secondItem="jdv-oG-4Ws" secondAttribute="leading" constant="16" id="0jK-Tu-BSK"/>
+<constraint firstItem="aQC-AU-nbX" firstAttribute="trailing" secondItem="jdv-oG-4Ws" secondAttribute="trailing" constant="-16" id="2p7-NL-7zo"/>
+<constraint firstItem="aQC-AU-nbX" firstAttribute="top" secondItem="jdv-oG-4Ws" secondAttribute="top" constant="16" id="meZ-Ei-MEG"/>
+<constraint firstItem="aQC-AU-nbX" firstAttribute="bottom" secondItem="jdv-oG-4Ws" secondAttribute="bottom" constant="-16" id="E5u-aI-CPr"/>
+</constraints>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius"><integer key="value" value="14"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</view>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STREAKS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msx-aM-qvS" customClass="HTLabel" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="16" y="511" width="100" height="13"/>
+<fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+<color key="textColor" red="0.541176471" green="0.541176471" blue="0.639215686" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="kern"><real key="value" value="1"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</label>
+<view contentMode="scaleToFill" clipsSubviews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Fe-3n-DGC">
+<rect key="frame" x="16" y="532" width="358" height="228"/>
+<subviews>
+<stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IPe-mH-dnn">
+<rect key="frame" x="0" y="0" width="358" height="228"/>
+</stackView>
+</subviews>
+<color key="backgroundColor" red="0.101960784" green="0.101960784" blue="0.180392157" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="IPe-mH-dnn" firstAttribute="leading" secondItem="2Fe-3n-DGC" secondAttribute="leading" id="NrC-SX-uXG"/>
+<constraint firstItem="IPe-mH-dnn" firstAttribute="trailing" secondItem="2Fe-3n-DGC" secondAttribute="trailing" id="EI4-cW-6Zu"/>
+<constraint firstItem="IPe-mH-dnn" firstAttribute="top" secondItem="2Fe-3n-DGC" secondAttribute="top" id="XHI-zb-7ZY"/>
+<constraint firstItem="IPe-mH-dnn" firstAttribute="bottom" secondItem="2Fe-3n-DGC" secondAttribute="bottom" id="LGH-9N-RDK"/>
+</constraints>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius"><integer key="value" value="14"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</view>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BADGES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2b-oV-ePA" customClass="HTLabel" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="16" y="784" width="100" height="13"/>
+<fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+<color key="textColor" red="0.541176471" green="0.541176471" blue="0.639215686" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="kern"><real key="value" value="1"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</label>
+<stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="KmJ-Xs-VUo">
+<rect key="frame" x="16" y="805" width="358" height="212"/>
+</stackView>
+<button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGz-2y-E5l" customClass="HTButton" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="16" y="1033" width="358" height="44"/>
+<constraints>
+<constraint firstAttribute="height" constant="44" id="AOy-lS-7My"/>
+</constraints>
+<fontDescription key="fontDescription" type="system" pointSize="17"/>
+<state key="normal" title="How rewards work">
+<color key="titleColor" red="0.545098039" green="0.482352941" blue="1.000000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+</state>
+<connections>
+<segue destination="4iO-mS-pnX" kind="show" identifier="showRewards" id="1Nc-4i-uOC"/>
+</connections>
+</button>
+</subviews>
+<constraints>
+<constraint firstItem="7k3-6b-zLC" firstAttribute="leading" secondItem="RqE-eA-k8K" secondAttribute="leading" constant="16" id="VWj-qW-6pE"/>
+<constraint firstItem="7k3-6b-zLC" firstAttribute="top" secondItem="RqE-eA-k8K" secondAttribute="top" constant="4" id="EbJ-6a-pgw"/>
+<constraint firstItem="h8J-JN-Q6F" firstAttribute="leading" secondItem="RqE-eA-k8K" secondAttribute="leading" constant="16" id="2g1-3o-GcE"/>
+<constraint firstItem="h8J-JN-Q6F" firstAttribute="trailing" secondItem="RqE-eA-k8K" secondAttribute="trailing" constant="-16" id="JX1-F3-Zew"/>
+<constraint firstItem="h8J-JN-Q6F" firstAttribute="top" secondItem="7k3-6b-zLC" secondAttribute="bottom" constant="16" id="f32-y8-u6U"/>
+<constraint firstItem="1TL-s0-o0B" firstAttribute="leading" secondItem="RqE-eA-k8K" secondAttribute="leading" constant="16" id="MRS-2O-0qr"/>
+<constraint firstItem="1TL-s0-o0B" firstAttribute="trailing" secondItem="RqE-eA-k8K" secondAttribute="trailing" constant="-16" id="1Bk-GJ-rxn"/>
+<constraint firstItem="1TL-s0-o0B" firstAttribute="top" secondItem="h8J-JN-Q6F" secondAttribute="bottom" constant="10" id="jsc-Eu-Lk1"/>
+<constraint firstItem="O68-4p-QF5" firstAttribute="leading" secondItem="RqE-eA-k8K" secondAttribute="leading" constant="16" id="pI5-w3-Zhb"/>
+<constraint firstItem="O68-4p-QF5" firstAttribute="top" secondItem="1TL-s0-o0B" secondAttribute="bottom" constant="24" id="BH6-rc-Wec"/>
+<constraint firstItem="jdv-oG-4Ws" firstAttribute="leading" secondItem="RqE-eA-k8K" secondAttribute="leading" constant="16" id="qyh-uc-aZ1"/>
+<constraint firstItem="jdv-oG-4Ws" firstAttribute="trailing" secondItem="RqE-eA-k8K" secondAttribute="trailing" constant="-16" id="Sps-vB-G28"/>
+<constraint firstItem="jdv-oG-4Ws" firstAttribute="top" secondItem="O68-4p-QF5" secondAttribute="bottom" constant="8" id="ULL-2Y-rCF"/>
+<constraint firstItem="Msx-aM-qvS" firstAttribute="leading" secondItem="RqE-eA-k8K" secondAttribute="leading" constant="16" id="R4s-I7-SrZ"/>
+<constraint firstItem="Msx-aM-qvS" firstAttribute="top" secondItem="jdv-oG-4Ws" secondAttribute="bottom" constant="24" id="9Nm-x8-Dg4"/>
+<constraint firstItem="2Fe-3n-DGC" firstAttribute="leading" secondItem="RqE-eA-k8K" secondAttribute="leading" constant="16" id="GUK-Rn-Mxw"/>
+<constraint firstItem="2Fe-3n-DGC" firstAttribute="trailing" secondItem="RqE-eA-k8K" secondAttribute="trailing" constant="-16" id="Jbn-9O-sXu"/>
+<constraint firstItem="2Fe-3n-DGC" firstAttribute="top" secondItem="Msx-aM-qvS" secondAttribute="bottom" constant="8" id="GRd-ef-JYv"/>
+<constraint firstItem="A2b-oV-ePA" firstAttribute="leading" secondItem="RqE-eA-k8K" secondAttribute="leading" constant="16" id="vNm-T9-ewH"/>
+<constraint firstItem="A2b-oV-ePA" firstAttribute="top" secondItem="2Fe-3n-DGC" secondAttribute="bottom" constant="24" id="uIw-Py-1YE"/>
+<constraint firstItem="KmJ-Xs-VUo" firstAttribute="leading" secondItem="RqE-eA-k8K" secondAttribute="leading" constant="16" id="Hkv-fA-X59"/>
+<constraint firstItem="KmJ-Xs-VUo" firstAttribute="trailing" secondItem="RqE-eA-k8K" secondAttribute="trailing" constant="-16" id="rYk-rv-QAh"/>
+<constraint firstItem="KmJ-Xs-VUo" firstAttribute="top" secondItem="A2b-oV-ePA" secondAttribute="bottom" constant="8" id="k2N-o3-nn2"/>
+<constraint firstItem="MGz-2y-E5l" firstAttribute="leading" secondItem="RqE-eA-k8K" secondAttribute="leading" constant="16" id="q6C-7s-ss7"/>
+<constraint firstItem="MGz-2y-E5l" firstAttribute="trailing" secondItem="RqE-eA-k8K" secondAttribute="trailing" constant="-16" id="Dn4-Dx-ncG"/>
+<constraint firstItem="MGz-2y-E5l" firstAttribute="top" secondItem="KmJ-Xs-VUo" secondAttribute="bottom" constant="16" id="HbU-dr-Zle"/>
+<constraint firstItem="MGz-2y-E5l" firstAttribute="bottom" secondItem="RqE-eA-k8K" secondAttribute="bottom" constant="-24" id="MXD-G9-Oy4"/>
+</constraints>
+</view>
+</subviews>
+<constraints>
+<constraint firstItem="RqE-eA-k8K" firstAttribute="top" secondItem="Xld-TQ-ZrP" secondAttribute="top" id="dvE-tE-WrZ"/>
+<constraint firstItem="RqE-eA-k8K" firstAttribute="bottom" secondItem="Xld-TQ-ZrP" secondAttribute="bottom" id="G2l-NR-YTB"/>
+<constraint firstItem="RqE-eA-k8K" firstAttribute="leading" secondItem="Xld-TQ-ZrP" secondAttribute="leading" id="uyE-rQ-9fq"/>
+<constraint firstItem="RqE-eA-k8K" firstAttribute="trailing" secondItem="Xld-TQ-ZrP" secondAttribute="trailing" id="Z80-ch-jQV"/>
+<constraint firstItem="RqE-eA-k8K" firstAttribute="width" secondItem="SPM-wF-Un3" secondAttribute="width" id="38N-iE-5Dg"/>
+</constraints>
+<viewLayoutGuide key="contentLayoutGuide" id="Xld-TQ-ZrP"/>
+<viewLayoutGuide key="frameLayoutGuide" id="SPM-wF-Un3"/>
+</scrollView>
+</subviews>
+<viewLayoutGuide key="safeArea" id="Rfs-L8-PKd"/>
+<color key="backgroundColor" red="0.058823529" green="0.058823529" blue="0.082352941" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="TxZ-PU-3Bz" firstAttribute="leading" secondItem="WRQ-w4-FwU" secondAttribute="leading" constant="8" id="l5L-Fi-6EI"/>
+<constraint firstItem="TxZ-PU-3Bz" firstAttribute="top" secondItem="Rfs-L8-PKd" secondAttribute="top" constant="9" id="KS4-3V-5dX"/>
+<constraint firstItem="NyJ-JR-FDa" firstAttribute="centerX" secondItem="WRQ-w4-FwU" secondAttribute="centerX" constant="3.5" id="7Tm-p1-XcO"/>
+<constraint firstItem="NyJ-JR-FDa" firstAttribute="centerY" secondItem="TxZ-PU-3Bz" secondAttribute="centerY" id="jy7-E7-JiT"/>
+<constraint firstItem="1a3-R3-kVm" firstAttribute="top" secondItem="TxZ-PU-3Bz" secondAttribute="bottom" id="D5i-3u-FKc"/>
+<constraint firstItem="1a3-R3-kVm" firstAttribute="leading" secondItem="WRQ-w4-FwU" secondAttribute="leading" id="Xn4-48-gM0"/>
+<constraint firstItem="1a3-R3-kVm" firstAttribute="trailing" secondItem="WRQ-w4-FwU" secondAttribute="trailing" id="rsS-If-ZgP"/>
+<constraint firstItem="1a3-R3-kVm" firstAttribute="bottom" secondItem="WRQ-w4-FwU" secondAttribute="bottom" id="J4X-h2-XiV"/>
+</constraints>
+</view>
+<connections>
+<outlet property="weekLabel" destination="hpj-uJ-1OA" id="l6a-x2-zvA"/>
+<outlet property="bestLabel" destination="VQh-dV-ugF" id="yM8-wi-Acy"/>
+<outlet property="activeLabel" destination="Xll-xV-0qe" id="CL4-Vi-nLu"/>
+<outlet property="levelLabel" destination="gTZ-7f-oge" id="9ZW-vt-Vxw"/>
+<outlet property="xpLabel" destination="8mH-HL-tUs" id="baf-0c-Kxm"/>
+<outlet property="xpBar" destination="zIt-Vt-LqG" id="wiP-KW-vDp"/>
+<outlet property="toNextLabel" destination="SXs-pi-e0o" id="AU3-l5-IJT"/>
+<outlet property="heatmapView" destination="aQC-AU-nbX" id="hWf-qb-1W8"/>
+<outlet property="streaksStack" destination="IPe-mH-dnn" id="lGJ-rY-2sI"/>
+<outlet property="badgesStack" destination="KmJ-Xs-VUo" id="fS7-pv-ndT"/>
+</connections>
+</viewController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="ys6-P7-55o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="1000" y="0"/>
+</scene>
+<scene sceneID="xQ2-6g-7uY">
+<objects>
+<viewController id="KG2-Pf-LWf" customClass="NewHabitViewController" customModule="HabitTracker" customModuleProvider="target" sceneMemberID="viewController">
+<view key="view" contentMode="scaleToFill" id="TXQ-23-ZEQ">
+<rect key="frame" x="0" y="0" width="390" height="844"/>
+<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<subviews>
+<button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ye-10-jE4" customClass="NavButton" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="8" y="56" width="72" height="44"/>
+<constraints>
+<constraint firstAttribute="height" constant="44" id="lab-Q8-6ib"/>
+<constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="wnM-I8-nAW"/>
+</constraints>
+<fontDescription key="fontDescription" type="system" pointSize="17"/>
+<state key="normal" title="Today">
+<color key="titleColor" red="0.545098039" green="0.482352941" blue="1.000000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+</state>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="string" keyPath="iconName" value="back"/>
+</userDefinedRuntimeAttributes>
+<connections>
+<action selector="backTapped:" destination="KG2-Pf-LWf" eventType="touchUpInside" id="ioE-DV-sN0"/>
+</connections>
+</button>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Habit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyg-X9-Ouf">
+<rect key="frame" x="160" y="68" width="80" height="20"/>
+<fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+<color key="textColor" red="1.000000000" green="1.000000000" blue="1.000000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z99-Dy-nJB">
+<rect key="frame" x="0" y="100" width="390" height="744"/>
+<subviews>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4kL-V4-4kN">
+<rect key="frame" x="0" y="0" width="390" height="760"/>
+<subviews>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Phk-OL-dZ6" customClass="IconTileView" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="16" y="12" width="72" height="72"/>
+<constraints>
+<constraint firstAttribute="width" constant="72" id="oC3-TY-UgL"/>
+<constraint firstAttribute="height" constant="72" id="Mvj-O4-XoN"/>
+</constraints>
+</view>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to change icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YV1-CP-VW5">
+<rect key="frame" x="104" y="38" width="150" height="18"/>
+<fontDescription key="fontDescription" type="system" pointSize="15"/>
+<color key="textColor" red="0.690196078" green="0.690196078" blue="0.752941176" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHOOSE ICON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rni-58-qVm" customClass="HTLabel" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="16" y="108" width="120" height="13"/>
+<fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+<color key="textColor" red="0.541176471" green="0.541176471" blue="0.639215686" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="kern"><real key="value" value="1"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</label>
+<stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xEu-gD-jFO">
+<rect key="frame" x="16" y="129" width="358" height="284"/>
+</stackView>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZM-7E-LuY" customClass="HTLabel" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="16" y="437" width="100" height="13"/>
+<fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+<color key="textColor" red="0.541176471" green="0.541176471" blue="0.639215686" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="kern"><real key="value" value="1"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</label>
+<textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Morning Run" placeholder="Habit name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="te6-0N-dwO" customClass="PaddedTextField" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="16" y="458" width="358" height="48"/>
+<constraints>
+<constraint firstAttribute="height" constant="48" id="g0O-Ig-R0u"/>
+</constraints>
+<color key="textColor" red="1.000000000" green="1.000000000" blue="1.000000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<fontDescription key="fontDescription" type="system" pointSize="17"/>
+<textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="NO"/>
+</textField>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REPEAT ON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42O-5X-DeZ" customClass="HTLabel" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="16" y="530" width="120" height="13"/>
+<fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+<color key="textColor" red="0.541176471" green="0.541176471" blue="0.639215686" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="kern"><real key="value" value="1"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</label>
+<stackView opaque="NO" contentMode="scaleToFill" axis="horizontal" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="jf2-C2-DXT">
+<rect key="frame" x="16" y="551" width="358" height="44"/>
+<subviews>
+<button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" tag="0" id="zz8-vB-xPs" customClass="HTButton" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="0" y="0" width="46" height="44"/>
+<accessibility key="accessibilityConfiguration" label="Monday"/>
+<fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+<state key="normal" title="M">
+<color key="titleColor" red="0.717647059" green="0.482352941" blue="0.960784314" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+</state>
+<connections>
+<action selector="dayTapped:" destination="KG2-Pf-LWf" eventType="touchUpInside" id="FBs-Qt-xYB"/>
+</connections>
+</button>
+<button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" tag="1" id="I31-IF-p7s" customClass="HTButton" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="52" y="0" width="46" height="44"/>
+<accessibility key="accessibilityConfiguration" label="Tuesday"/>
+<fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+<state key="normal" title="T">
+<color key="titleColor" red="0.717647059" green="0.482352941" blue="0.960784314" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+</state>
+<connections>
+<action selector="dayTapped:" destination="KG2-Pf-LWf" eventType="touchUpInside" id="GfI-k2-651"/>
+</connections>
+</button>
+<button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" tag="2" id="B4s-Fi-wwX" customClass="HTButton" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="104" y="0" width="46" height="44"/>
+<accessibility key="accessibilityConfiguration" label="Wednesday"/>
+<fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+<state key="normal" title="W">
+<color key="titleColor" red="0.717647059" green="0.482352941" blue="0.960784314" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+</state>
+<connections>
+<action selector="dayTapped:" destination="KG2-Pf-LWf" eventType="touchUpInside" id="Thk-t6-Ftw"/>
+</connections>
+</button>
+<button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" tag="3" id="YrW-Xh-PHp" customClass="HTButton" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="156" y="0" width="46" height="44"/>
+<accessibility key="accessibilityConfiguration" label="Thursday"/>
+<fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+<state key="normal" title="T">
+<color key="titleColor" red="0.717647059" green="0.482352941" blue="0.960784314" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+</state>
+<connections>
+<action selector="dayTapped:" destination="KG2-Pf-LWf" eventType="touchUpInside" id="tb8-2C-GZh"/>
+</connections>
+</button>
+<button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" tag="4" id="zbz-Wn-a8v" customClass="HTButton" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="208" y="0" width="46" height="44"/>
+<accessibility key="accessibilityConfiguration" label="Friday"/>
+<fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+<state key="normal" title="F">
+<color key="titleColor" red="0.717647059" green="0.482352941" blue="0.960784314" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+</state>
+<connections>
+<action selector="dayTapped:" destination="KG2-Pf-LWf" eventType="touchUpInside" id="jLb-IY-rUp"/>
+</connections>
+</button>
+<button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" tag="5" id="ZbD-xg-v6c" customClass="HTButton" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="260" y="0" width="46" height="44"/>
+<accessibility key="accessibilityConfiguration" label="Saturday"/>
+<fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+<state key="normal" title="S">
+<color key="titleColor" red="0.717647059" green="0.482352941" blue="0.960784314" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+</state>
+<connections>
+<action selector="dayTapped:" destination="KG2-Pf-LWf" eventType="touchUpInside" id="1Y0-xK-rUp"/>
+</connections>
+</button>
+<button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" tag="6" id="KIc-YL-PDz" customClass="HTButton" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="312" y="0" width="46" height="44"/>
+<accessibility key="accessibilityConfiguration" label="Sunday"/>
+<fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+<state key="normal" title="S">
+<color key="titleColor" red="0.717647059" green="0.482352941" blue="0.960784314" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+</state>
+<connections>
+<action selector="dayTapped:" destination="KG2-Pf-LWf" eventType="touchUpInside" id="Q03-ZJ-chH"/>
+</connections>
+</button>
+</subviews>
+<constraints>
+<constraint firstAttribute="height" constant="44" id="fOK-vm-j7X"/>
+</constraints>
+</stackView>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Every check-in earns +10 XP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xz-Ss-BLv">
+<rect key="frame" x="16" y="615" width="250" height="17"/>
+<fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+<color key="textColor" red="0.960784314" green="0.619607843" blue="0.043137255" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abo-q6-ldm" customClass="HTButton" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="16" y="648" width="358" height="52"/>
+<constraints>
+<constraint firstAttribute="height" constant="52" id="Hms-lj-cJq"/>
+</constraints>
+<fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+<state key="normal" title="Save Habit">
+<color key="titleColor" red="1.000000000" green="1.000000000" blue="1.000000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+</state>
+<color key="backgroundColor" red="0.423529412" green="0.388235294" blue="1.000000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius"><integer key="value" value="14"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+<connections>
+<action selector="saveTapped:" destination="KG2-Pf-LWf" eventType="touchUpInside" id="8XZ-c2-0WW"/>
+</connections>
+</button>
+<button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKw-oT-KxN" customClass="HTButton" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="16" y="708" width="358" height="44"/>
+<constraints>
+<constraint firstAttribute="height" constant="44" id="J2x-jx-QBo"/>
+</constraints>
+<fontDescription key="fontDescription" type="system" pointSize="17"/>
+<state key="normal" title="Discard Habit">
+<color key="titleColor" red="0.972549020" green="0.443137255" blue="0.443137255" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+</state>
+<connections>
+<action selector="discardTapped:" destination="KG2-Pf-LWf" eventType="touchUpInside" id="dxp-tf-qZv"/>
+</connections>
+</button>
+</subviews>
+<constraints>
+<constraint firstItem="Phk-OL-dZ6" firstAttribute="leading" secondItem="4kL-V4-4kN" secondAttribute="leading" constant="16" id="C92-f3-Snb"/>
+<constraint firstItem="Phk-OL-dZ6" firstAttribute="top" secondItem="4kL-V4-4kN" secondAttribute="top" constant="12" id="lMt-o4-svm"/>
+<constraint firstItem="YV1-CP-VW5" firstAttribute="leading" secondItem="Phk-OL-dZ6" secondAttribute="trailing" constant="16" id="bPj-iD-MOP"/>
+<constraint firstItem="YV1-CP-VW5" firstAttribute="centerY" secondItem="Phk-OL-dZ6" secondAttribute="centerY" id="QJN-Br-fOz"/>
+<constraint firstItem="rni-58-qVm" firstAttribute="leading" secondItem="4kL-V4-4kN" secondAttribute="leading" constant="16" id="g3A-j2-rIe"/>
+<constraint firstItem="rni-58-qVm" firstAttribute="top" secondItem="Phk-OL-dZ6" secondAttribute="bottom" constant="24" id="VRb-OQ-H9y"/>
+<constraint firstItem="xEu-gD-jFO" firstAttribute="leading" secondItem="4kL-V4-4kN" secondAttribute="leading" constant="16" id="Lna-Rn-5CW"/>
+<constraint firstItem="xEu-gD-jFO" firstAttribute="trailing" secondItem="4kL-V4-4kN" secondAttribute="trailing" constant="-16" id="mIY-EY-ikW"/>
+<constraint firstItem="xEu-gD-jFO" firstAttribute="top" secondItem="rni-58-qVm" secondAttribute="bottom" constant="8" id="Vde-SO-pOj"/>
+<constraint firstItem="EZM-7E-LuY" firstAttribute="leading" secondItem="4kL-V4-4kN" secondAttribute="leading" constant="16" id="4Ph-z4-pHf"/>
+<constraint firstItem="EZM-7E-LuY" firstAttribute="top" secondItem="xEu-gD-jFO" secondAttribute="bottom" constant="24" id="MGR-D1-gNE"/>
+<constraint firstItem="te6-0N-dwO" firstAttribute="leading" secondItem="4kL-V4-4kN" secondAttribute="leading" constant="16" id="NnD-xv-FGt"/>
+<constraint firstItem="te6-0N-dwO" firstAttribute="trailing" secondItem="4kL-V4-4kN" secondAttribute="trailing" constant="-16" id="qfh-7b-GmI"/>
+<constraint firstItem="te6-0N-dwO" firstAttribute="top" secondItem="EZM-7E-LuY" secondAttribute="bottom" constant="8" id="Bls-Lu-sGc"/>
+<constraint firstItem="42O-5X-DeZ" firstAttribute="leading" secondItem="4kL-V4-4kN" secondAttribute="leading" constant="16" id="Cov-oW-OeH"/>
+<constraint firstItem="42O-5X-DeZ" firstAttribute="top" secondItem="te6-0N-dwO" secondAttribute="bottom" constant="24" id="25X-qj-mQl"/>
+<constraint firstItem="jf2-C2-DXT" firstAttribute="leading" secondItem="4kL-V4-4kN" secondAttribute="leading" constant="16" id="tj2-u1-lsK"/>
+<constraint firstItem="jf2-C2-DXT" firstAttribute="trailing" secondItem="4kL-V4-4kN" secondAttribute="trailing" constant="-16" id="3MW-Pa-eNU"/>
+<constraint firstItem="jf2-C2-DXT" firstAttribute="top" secondItem="42O-5X-DeZ" secondAttribute="bottom" constant="8" id="ugC-Ak-9z5"/>
+<constraint firstItem="9xz-Ss-BLv" firstAttribute="leading" secondItem="4kL-V4-4kN" secondAttribute="leading" constant="16" id="Dm6-hg-Kve"/>
+<constraint firstItem="9xz-Ss-BLv" firstAttribute="top" secondItem="jf2-C2-DXT" secondAttribute="bottom" constant="20" id="jJF-pb-StH"/>
+<constraint firstItem="abo-q6-ldm" firstAttribute="leading" secondItem="4kL-V4-4kN" secondAttribute="leading" constant="16" id="b5N-K8-Zft"/>
+<constraint firstItem="abo-q6-ldm" firstAttribute="trailing" secondItem="4kL-V4-4kN" secondAttribute="trailing" constant="-16" id="644-5q-by4"/>
+<constraint firstItem="abo-q6-ldm" firstAttribute="top" secondItem="9xz-Ss-BLv" secondAttribute="bottom" constant="16" id="pRA-ds-ShJ"/>
+<constraint firstItem="KKw-oT-KxN" firstAttribute="leading" secondItem="4kL-V4-4kN" secondAttribute="leading" constant="16" id="GMm-1P-7O8"/>
+<constraint firstItem="KKw-oT-KxN" firstAttribute="trailing" secondItem="4kL-V4-4kN" secondAttribute="trailing" constant="-16" id="jJb-2p-FzX"/>
+<constraint firstItem="KKw-oT-KxN" firstAttribute="top" secondItem="abo-q6-ldm" secondAttribute="bottom" constant="8" id="PO8-C4-suD"/>
+<constraint firstItem="KKw-oT-KxN" firstAttribute="bottom" secondItem="4kL-V4-4kN" secondAttribute="bottom" constant="-24" id="FB0-du-t01"/>
+</constraints>
+</view>
+</subviews>
+<constraints>
+<constraint firstItem="4kL-V4-4kN" firstAttribute="top" secondItem="jrb-GB-bwl" secondAttribute="top" id="yyv-l3-T5W"/>
+<constraint firstItem="4kL-V4-4kN" firstAttribute="bottom" secondItem="jrb-GB-bwl" secondAttribute="bottom" id="Yh5-yd-DD1"/>
+<constraint firstItem="4kL-V4-4kN" firstAttribute="leading" secondItem="jrb-GB-bwl" secondAttribute="leading" id="D17-M6-KKg"/>
+<constraint firstItem="4kL-V4-4kN" firstAttribute="trailing" secondItem="jrb-GB-bwl" secondAttribute="trailing" id="6FW-Hs-dgC"/>
+<constraint firstItem="4kL-V4-4kN" firstAttribute="width" secondItem="Ir7-Tc-WsI" secondAttribute="width" id="c8Y-3t-Lj1"/>
+</constraints>
+<viewLayoutGuide key="contentLayoutGuide" id="jrb-GB-bwl"/>
+<viewLayoutGuide key="frameLayoutGuide" id="Ir7-Tc-WsI"/>
+</scrollView>
+</subviews>
+<viewLayoutGuide key="safeArea" id="Z4N-WP-DEI"/>
+<color key="backgroundColor" red="0.058823529" green="0.058823529" blue="0.082352941" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="7ye-10-jE4" firstAttribute="leading" secondItem="TXQ-23-ZEQ" secondAttribute="leading" constant="8" id="fW2-uv-HX8"/>
+<constraint firstItem="7ye-10-jE4" firstAttribute="top" secondItem="Z4N-WP-DEI" secondAttribute="top" constant="9" id="u0S-dg-X0E"/>
+<constraint firstItem="Lyg-X9-Ouf" firstAttribute="centerX" secondItem="TXQ-23-ZEQ" secondAttribute="centerX" constant="3.75" id="t9U-mD-L1P"/>
+<constraint firstItem="Lyg-X9-Ouf" firstAttribute="centerY" secondItem="7ye-10-jE4" secondAttribute="centerY" id="TAX-AW-T19"/>
+<constraint firstItem="z99-Dy-nJB" firstAttribute="top" secondItem="7ye-10-jE4" secondAttribute="bottom" id="EUX-UU-NsF"/>
+<constraint firstItem="z99-Dy-nJB" firstAttribute="leading" secondItem="TXQ-23-ZEQ" secondAttribute="leading" id="1m6-TO-xsR"/>
+<constraint firstItem="z99-Dy-nJB" firstAttribute="trailing" secondItem="TXQ-23-ZEQ" secondAttribute="trailing" id="kiT-jk-oAu"/>
+<constraint firstItem="z99-Dy-nJB" firstAttribute="bottom" secondItem="TXQ-23-ZEQ" secondAttribute="bottom" id="OiG-hu-Utf"/>
+</constraints>
+</view>
+<connections>
+<outlet property="scrollView" destination="z99-Dy-nJB" id="5Yw-Pu-dlP"/>
+<outlet property="previewTile" destination="Phk-OL-dZ6" id="nIU-Kd-oRE"/>
+<outlet property="iconGrid" destination="xEu-gD-jFO" id="KSB-4F-JsD"/>
+<outlet property="nameField" destination="te6-0N-dwO" id="EFM-qM-ywr"/>
+<outletCollection property="dayButtons" destination="zz8-vB-xPs" collectionClass="NSMutableArray" id="WB6-rb-1a7"/>
+<outletCollection property="dayButtons" destination="I31-IF-p7s" collectionClass="NSMutableArray" id="s7k-I6-Xof"/>
+<outletCollection property="dayButtons" destination="B4s-Fi-wwX" collectionClass="NSMutableArray" id="vXI-lW-d1Y"/>
+<outletCollection property="dayButtons" destination="YrW-Xh-PHp" collectionClass="NSMutableArray" id="gGx-MH-hvN"/>
+<outletCollection property="dayButtons" destination="zbz-Wn-a8v" collectionClass="NSMutableArray" id="twe-QV-9Bz"/>
+<outletCollection property="dayButtons" destination="ZbD-xg-v6c" collectionClass="NSMutableArray" id="WVd-VW-4V3"/>
+<outletCollection property="dayButtons" destination="KIc-YL-PDz" collectionClass="NSMutableArray" id="1KB-FB-b37"/>
+</connections>
+</viewController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="VuH-qP-Dqp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="1700" y="0"/>
+</scene>
+<scene sceneID="Jzj-dO-9Kn">
+<objects>
+<viewController id="4iO-mS-pnX" customClass="RewardsViewController" customModule="HabitTracker" customModuleProvider="target" sceneMemberID="viewController">
+<view key="view" contentMode="scaleToFill" id="5xr-bw-0aR">
+<rect key="frame" x="0" y="0" width="390" height="844"/>
+<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<subviews>
+<button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcO-wc-OBE" customClass="NavButton" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="8" y="56" width="72" height="44"/>
+<constraints>
+<constraint firstAttribute="height" constant="44" id="UKj-uZ-Sib"/>
+<constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="yTo-Bc-CcR"/>
+</constraints>
+<fontDescription key="fontDescription" type="system" pointSize="17"/>
+<state key="normal" title="Back">
+<color key="titleColor" red="0.545098039" green="0.482352941" blue="1.000000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+</state>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="string" keyPath="iconName" value="back"/>
+</userDefinedRuntimeAttributes>
+<connections>
+<action selector="backTapped:" destination="4iO-mS-pnX" eventType="touchUpInside" id="eEU-GU-PQP"/>
+</connections>
+</button>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How rewards work" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIi-GK-rzB">
+<rect key="frame" x="160" y="68" width="80" height="20"/>
+<fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+<color key="textColor" red="1.000000000" green="1.000000000" blue="1.000000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0l-Vv-wvH">
+<rect key="frame" x="0" y="100" width="390" height="744"/>
+<subviews>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="700-52-LQm">
+<rect key="frame" x="0" y="0" width="390" height="593"/>
+<subviews>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rewards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcV-LD-1KC" customClass="HTLabel" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="16" y="4" width="358" height="41"/>
+<fontDescription key="fontDescription" type="system" weight="bold" pointSize="34"/>
+<color key="textColor" red="1.000000000" green="1.000000000" blue="1.000000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="kern"><real key="value" value="0.2"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</label>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKy-Lt-BT1">
+<rect key="frame" x="16" y="61" width="358" height="105"/>
+<subviews>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+10 XP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DqM-si-lwn">
+<rect key="frame" x="16" y="14" width="64" height="18"/>
+<constraints>
+<constraint firstAttribute="width" constant="64" id="S3E-DQ-nrV"/>
+</constraints>
+<fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+<color key="textColor" red="0.960784314" green="0.619607843" blue="0.043137255" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruR-j2-72W">
+<rect key="frame" x="94" y="14" width="200" height="18"/>
+<fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+<color key="textColor" red="1.000000000" green="1.000000000" blue="1.000000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete a habit for today. Unchecking it takes the XP back, so it can't be farmed." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKh-r9-swE" customClass="HTLabel" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="94" y="34" width="248" height="57"/>
+<fontDescription key="fontDescription" type="system" pointSize="14"/>
+<color key="textColor" red="0.690196078" green="0.690196078" blue="0.752941176" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="lineHeight"><real key="value" value="18.9"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</label>
+</subviews>
+<color key="backgroundColor" red="0.101960784" green="0.101960784" blue="0.180392157" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="DqM-si-lwn" firstAttribute="leading" secondItem="NKy-Lt-BT1" secondAttribute="leading" constant="16" id="vrs-wX-mZT"/>
+<constraint firstItem="DqM-si-lwn" firstAttribute="top" secondItem="NKy-Lt-BT1" secondAttribute="top" constant="14" id="cVE-4R-LpM"/>
+<constraint firstItem="ruR-j2-72W" firstAttribute="leading" secondItem="DqM-si-lwn" secondAttribute="trailing" constant="14" id="rLR-wy-yXe"/>
+<constraint firstItem="ruR-j2-72W" firstAttribute="top" secondItem="NKy-Lt-BT1" secondAttribute="top" constant="14" id="vrS-M1-XYE"/>
+<constraint firstItem="BKh-r9-swE" firstAttribute="leading" secondItem="ruR-j2-72W" secondAttribute="leading" id="Bo1-xo-UKu"/>
+<constraint firstItem="BKh-r9-swE" firstAttribute="trailing" secondItem="NKy-Lt-BT1" secondAttribute="trailing" constant="-16" id="tZk-S8-vjp"/>
+<constraint firstItem="BKh-r9-swE" firstAttribute="top" secondItem="ruR-j2-72W" secondAttribute="bottom" constant="2" id="ZWK-Ag-2aY"/>
+<constraint firstItem="BKh-r9-swE" firstAttribute="bottom" secondItem="NKy-Lt-BT1" secondAttribute="bottom" constant="-14" id="sWk-bi-PJX"/>
+</constraints>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius"><integer key="value" value="14"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</view>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujz-Tp-2xe">
+<rect key="frame" x="16" y="176" width="358" height="86"/>
+<subviews>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+20 XP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwQ-a1-QXA">
+<rect key="frame" x="16" y="14" width="64" height="18"/>
+<constraints>
+<constraint firstAttribute="width" constant="64" id="Yxp-d7-acC"/>
+</constraints>
+<fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+<color key="textColor" red="0.960784314" green="0.619607843" blue="0.043137255" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perfect day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GM-rc-YPJ">
+<rect key="frame" x="94" y="14" width="200" height="18"/>
+<fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+<color key="textColor" red="1.000000000" green="1.000000000" blue="1.000000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete every habit scheduled for today. Awarded once per day." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyr-GE-gb6" customClass="HTLabel" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="94" y="34" width="248" height="38"/>
+<fontDescription key="fontDescription" type="system" pointSize="14"/>
+<color key="textColor" red="0.690196078" green="0.690196078" blue="0.752941176" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="lineHeight"><real key="value" value="18.9"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</label>
+</subviews>
+<color key="backgroundColor" red="0.101960784" green="0.101960784" blue="0.180392157" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="CwQ-a1-QXA" firstAttribute="leading" secondItem="ujz-Tp-2xe" secondAttribute="leading" constant="16" id="Pam-3U-csA"/>
+<constraint firstItem="CwQ-a1-QXA" firstAttribute="top" secondItem="ujz-Tp-2xe" secondAttribute="top" constant="14" id="gF4-Oe-olL"/>
+<constraint firstItem="9GM-rc-YPJ" firstAttribute="leading" secondItem="CwQ-a1-QXA" secondAttribute="trailing" constant="14" id="X9C-Is-kvb"/>
+<constraint firstItem="9GM-rc-YPJ" firstAttribute="top" secondItem="ujz-Tp-2xe" secondAttribute="top" constant="14" id="51Y-n0-NPt"/>
+<constraint firstItem="wyr-GE-gb6" firstAttribute="leading" secondItem="9GM-rc-YPJ" secondAttribute="leading" id="5DJ-Rx-qJe"/>
+<constraint firstItem="wyr-GE-gb6" firstAttribute="trailing" secondItem="ujz-Tp-2xe" secondAttribute="trailing" constant="-16" id="L96-9T-HfC"/>
+<constraint firstItem="wyr-GE-gb6" firstAttribute="top" secondItem="9GM-rc-YPJ" secondAttribute="bottom" constant="2" id="TiW-tk-u3T"/>
+<constraint firstItem="wyr-GE-gb6" firstAttribute="bottom" secondItem="ujz-Tp-2xe" secondAttribute="bottom" constant="-14" id="EO0-cY-QmC"/>
+</constraints>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius"><integer key="value" value="14"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</view>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gfw-60-RdR">
+<rect key="frame" x="16" y="272" width="358" height="86"/>
+<subviews>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 XP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1N-cu-eZ5">
+<rect key="frame" x="16" y="14" width="64" height="18"/>
+<constraints>
+<constraint firstAttribute="width" constant="64" id="bes-rj-eZr"/>
+</constraints>
+<fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+<color key="textColor" red="0.960784314" green="0.619607843" blue="0.043137255" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esN-Nk-sND">
+<rect key="frame" x="94" y="14" width="200" height="18"/>
+<fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+<color key="textColor" red="1.000000000" green="1.000000000" blue="1.000000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level = total XP ÷ 100, rounded down, plus 1." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZD-io-Iew" customClass="HTLabel" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="94" y="34" width="248" height="38"/>
+<fontDescription key="fontDescription" type="system" pointSize="14"/>
+<color key="textColor" red="0.690196078" green="0.690196078" blue="0.752941176" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="lineHeight"><real key="value" value="18.9"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</label>
+</subviews>
+<color key="backgroundColor" red="0.101960784" green="0.101960784" blue="0.180392157" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="D1N-cu-eZ5" firstAttribute="leading" secondItem="Gfw-60-RdR" secondAttribute="leading" constant="16" id="Hj4-Wr-R89"/>
+<constraint firstItem="D1N-cu-eZ5" firstAttribute="top" secondItem="Gfw-60-RdR" secondAttribute="top" constant="14" id="NcX-f8-Blo"/>
+<constraint firstItem="esN-Nk-sND" firstAttribute="leading" secondItem="D1N-cu-eZ5" secondAttribute="trailing" constant="14" id="Hp9-yM-R0l"/>
+<constraint firstItem="esN-Nk-sND" firstAttribute="top" secondItem="Gfw-60-RdR" secondAttribute="top" constant="14" id="JU0-Rm-ioe"/>
+<constraint firstItem="GZD-io-Iew" firstAttribute="leading" secondItem="esN-Nk-sND" secondAttribute="leading" id="YFw-p2-EBc"/>
+<constraint firstItem="GZD-io-Iew" firstAttribute="trailing" secondItem="Gfw-60-RdR" secondAttribute="trailing" constant="-16" id="bbJ-Om-qDf"/>
+<constraint firstItem="GZD-io-Iew" firstAttribute="top" secondItem="esN-Nk-sND" secondAttribute="bottom" constant="2" id="0yx-iO-nTc"/>
+<constraint firstItem="GZD-io-Iew" firstAttribute="bottom" secondItem="Gfw-60-RdR" secondAttribute="bottom" constant="-14" id="VAi-Tq-nbt"/>
+</constraints>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius"><integer key="value" value="14"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</view>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSX-FR-O9O">
+<rect key="frame" x="16" y="368" width="358" height="86"/>
+<subviews>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Streak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bl9-ny-FJa">
+<rect key="frame" x="16" y="14" width="64" height="18"/>
+<constraints>
+<constraint firstAttribute="width" constant="64" id="IJz-GK-Zyf"/>
+</constraints>
+<fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+<color key="textColor" red="0.960784314" green="0.619607843" blue="0.043137255" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scheduled days only" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvG-wd-Db4">
+<rect key="frame" x="94" y="14" width="200" height="18"/>
+<fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+<color key="textColor" red="1.000000000" green="1.000000000" blue="1.000000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days a habit isn't scheduled never break the streak." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6i-PK-f9Z" customClass="HTLabel" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="94" y="34" width="248" height="38"/>
+<fontDescription key="fontDescription" type="system" pointSize="14"/>
+<color key="textColor" red="0.690196078" green="0.690196078" blue="0.752941176" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="lineHeight"><real key="value" value="18.9"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</label>
+</subviews>
+<color key="backgroundColor" red="0.101960784" green="0.101960784" blue="0.180392157" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="Bl9-ny-FJa" firstAttribute="leading" secondItem="XSX-FR-O9O" secondAttribute="leading" constant="16" id="XF4-jn-nXs"/>
+<constraint firstItem="Bl9-ny-FJa" firstAttribute="top" secondItem="XSX-FR-O9O" secondAttribute="top" constant="14" id="iHR-8y-Wmo"/>
+<constraint firstItem="bvG-wd-Db4" firstAttribute="leading" secondItem="Bl9-ny-FJa" secondAttribute="trailing" constant="14" id="Fk8-EC-gq9"/>
+<constraint firstItem="bvG-wd-Db4" firstAttribute="top" secondItem="XSX-FR-O9O" secondAttribute="top" constant="14" id="we6-68-9Hx"/>
+<constraint firstItem="q6i-PK-f9Z" firstAttribute="leading" secondItem="bvG-wd-Db4" secondAttribute="leading" id="G0M-A9-Chz"/>
+<constraint firstItem="q6i-PK-f9Z" firstAttribute="trailing" secondItem="XSX-FR-O9O" secondAttribute="trailing" constant="-16" id="Yug-hJ-x7e"/>
+<constraint firstItem="q6i-PK-f9Z" firstAttribute="top" secondItem="bvG-wd-Db4" secondAttribute="bottom" constant="2" id="rqL-yU-X7l"/>
+<constraint firstItem="q6i-PK-f9Z" firstAttribute="bottom" secondItem="XSX-FR-O9O" secondAttribute="bottom" constant="-14" id="R1v-vv-HlE"/>
+</constraints>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius"><integer key="value" value="14"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</view>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bPf-xS-8KR">
+<rect key="frame" x="16" y="464" width="358" height="105"/>
+<subviews>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Badges" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9h-cO-cys">
+<rect key="frame" x="16" y="14" width="64" height="18"/>
+<constraints>
+<constraint firstAttribute="width" constant="64" id="8st-8r-nWM"/>
+</constraints>
+<fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+<color key="textColor" red="0.960784314" green="0.619607843" blue="0.043137255" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earned once" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gN-z8-mHa">
+<rect key="frame" x="94" y="14" width="200" height="18"/>
+<fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+<color key="textColor" red="1.000000000" green="1.000000000" blue="1.000000000" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Check-in, 3-Day Streak, 7-Day Streak, Perfect Day, 50 Check-ins, Level 5." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhw-MR-GOz" customClass="HTLabel" customModule="HabitTracker" customModuleProvider="target">
+<rect key="frame" x="94" y="34" width="248" height="57"/>
+<fontDescription key="fontDescription" type="system" pointSize="14"/>
+<color key="textColor" red="0.690196078" green="0.690196078" blue="0.752941176" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="lineHeight"><real key="value" value="18.9"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</label>
+</subviews>
+<color key="backgroundColor" red="0.101960784" green="0.101960784" blue="0.180392157" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="t9h-cO-cys" firstAttribute="leading" secondItem="bPf-xS-8KR" secondAttribute="leading" constant="16" id="0x7-Vz-7qy"/>
+<constraint firstItem="t9h-cO-cys" firstAttribute="top" secondItem="bPf-xS-8KR" secondAttribute="top" constant="14" id="l7R-53-FEb"/>
+<constraint firstItem="3gN-z8-mHa" firstAttribute="leading" secondItem="t9h-cO-cys" secondAttribute="trailing" constant="14" id="V7z-Gd-1pJ"/>
+<constraint firstItem="3gN-z8-mHa" firstAttribute="top" secondItem="bPf-xS-8KR" secondAttribute="top" constant="14" id="ewE-WE-Qth"/>
+<constraint firstItem="jhw-MR-GOz" firstAttribute="leading" secondItem="3gN-z8-mHa" secondAttribute="leading" id="JGg-TL-Mt8"/>
+<constraint firstItem="jhw-MR-GOz" firstAttribute="trailing" secondItem="bPf-xS-8KR" secondAttribute="trailing" constant="-16" id="TeZ-6j-9RS"/>
+<constraint firstItem="jhw-MR-GOz" firstAttribute="top" secondItem="3gN-z8-mHa" secondAttribute="bottom" constant="2" id="sOQ-AP-su6"/>
+<constraint firstItem="jhw-MR-GOz" firstAttribute="bottom" secondItem="bPf-xS-8KR" secondAttribute="bottom" constant="-14" id="DLs-fS-m0Y"/>
+</constraints>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius"><integer key="value" value="14"/></userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</view>
+</subviews>
+<constraints>
+<constraint firstItem="FcV-LD-1KC" firstAttribute="leading" secondItem="700-52-LQm" secondAttribute="leading" constant="16" id="qTS-gQ-pFj"/>
+<constraint firstItem="FcV-LD-1KC" firstAttribute="top" secondItem="700-52-LQm" secondAttribute="top" constant="4" id="Z46-UG-S7P"/>
+<constraint firstItem="NKy-Lt-BT1" firstAttribute="leading" secondItem="700-52-LQm" secondAttribute="leading" constant="16" id="pnn-wu-kA1"/>
+<constraint firstItem="NKy-Lt-BT1" firstAttribute="trailing" secondItem="700-52-LQm" secondAttribute="trailing" constant="-16" id="gMA-kX-0dN"/>
+<constraint firstItem="NKy-Lt-BT1" firstAttribute="top" secondItem="FcV-LD-1KC" secondAttribute="bottom" constant="16" id="8Jc-yu-Ud8"/>
+<constraint firstItem="ujz-Tp-2xe" firstAttribute="leading" secondItem="700-52-LQm" secondAttribute="leading" constant="16" id="uRE-As-cXV"/>
+<constraint firstItem="ujz-Tp-2xe" firstAttribute="trailing" secondItem="700-52-LQm" secondAttribute="trailing" constant="-16" id="4vp-et-pGJ"/>
+<constraint firstItem="ujz-Tp-2xe" firstAttribute="top" secondItem="NKy-Lt-BT1" secondAttribute="bottom" constant="10" id="DHO-zk-Xlf"/>
+<constraint firstItem="Gfw-60-RdR" firstAttribute="leading" secondItem="700-52-LQm" secondAttribute="leading" constant="16" id="lfM-vQ-Nug"/>
+<constraint firstItem="Gfw-60-RdR" firstAttribute="trailing" secondItem="700-52-LQm" secondAttribute="trailing" constant="-16" id="uwz-A9-t5j"/>
+<constraint firstItem="Gfw-60-RdR" firstAttribute="top" secondItem="ujz-Tp-2xe" secondAttribute="bottom" constant="10" id="fS6-Sy-I6A"/>
+<constraint firstItem="XSX-FR-O9O" firstAttribute="leading" secondItem="700-52-LQm" secondAttribute="leading" constant="16" id="0q8-WK-Li5"/>
+<constraint firstItem="XSX-FR-O9O" firstAttribute="trailing" secondItem="700-52-LQm" secondAttribute="trailing" constant="-16" id="qJI-4m-ijO"/>
+<constraint firstItem="XSX-FR-O9O" firstAttribute="top" secondItem="Gfw-60-RdR" secondAttribute="bottom" constant="10" id="Xd4-7E-AMQ"/>
+<constraint firstItem="bPf-xS-8KR" firstAttribute="leading" secondItem="700-52-LQm" secondAttribute="leading" constant="16" id="48y-8A-bM2"/>
+<constraint firstItem="bPf-xS-8KR" firstAttribute="trailing" secondItem="700-52-LQm" secondAttribute="trailing" constant="-16" id="yzK-4g-UOZ"/>
+<constraint firstItem="bPf-xS-8KR" firstAttribute="top" secondItem="XSX-FR-O9O" secondAttribute="bottom" constant="10" id="d4S-hN-MLS"/>
+<constraint firstItem="bPf-xS-8KR" firstAttribute="bottom" secondItem="700-52-LQm" secondAttribute="bottom" constant="-24" id="VYb-YO-Y9h"/>
+</constraints>
+</view>
+</subviews>
+<constraints>
+<constraint firstItem="700-52-LQm" firstAttribute="top" secondItem="spJ-Lc-0DT" secondAttribute="top" id="8wZ-Jo-sFx"/>
+<constraint firstItem="700-52-LQm" firstAttribute="bottom" secondItem="spJ-Lc-0DT" secondAttribute="bottom" id="TRa-B9-NlB"/>
+<constraint firstItem="700-52-LQm" firstAttribute="leading" secondItem="spJ-Lc-0DT" secondAttribute="leading" id="fvW-xr-ryP"/>
+<constraint firstItem="700-52-LQm" firstAttribute="trailing" secondItem="spJ-Lc-0DT" secondAttribute="trailing" id="sat-lI-SqH"/>
+<constraint firstItem="700-52-LQm" firstAttribute="width" secondItem="Fuv-EV-Viv" secondAttribute="width" id="RN8-Kk-AcN"/>
+</constraints>
+<viewLayoutGuide key="contentLayoutGuide" id="spJ-Lc-0DT"/>
+<viewLayoutGuide key="frameLayoutGuide" id="Fuv-EV-Viv"/>
+</scrollView>
+</subviews>
+<viewLayoutGuide key="safeArea" id="FvK-yQ-QbV"/>
+<color key="backgroundColor" red="0.058823529" green="0.058823529" blue="0.082352941" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="UcO-wc-OBE" firstAttribute="leading" secondItem="5xr-bw-0aR" secondAttribute="leading" constant="8" id="xM3-tn-Y4W"/>
+<constraint firstItem="UcO-wc-OBE" firstAttribute="top" secondItem="FvK-yQ-QbV" secondAttribute="top" constant="9" id="ftH-Kr-mUe"/>
+<constraint firstItem="tIi-GK-rzB" firstAttribute="centerX" secondItem="5xr-bw-0aR" secondAttribute="centerX" constant="1" id="YXH-ol-HYa"/>
+<constraint firstItem="tIi-GK-rzB" firstAttribute="centerY" secondItem="UcO-wc-OBE" secondAttribute="centerY" id="13i-l3-C31"/>
+<constraint firstItem="U0l-Vv-wvH" firstAttribute="top" secondItem="UcO-wc-OBE" secondAttribute="bottom" id="3FQ-dG-LtP"/>
+<constraint firstItem="U0l-Vv-wvH" firstAttribute="leading" secondItem="5xr-bw-0aR" secondAttribute="leading" id="TT1-VW-e55"/>
+<constraint firstItem="U0l-Vv-wvH" firstAttribute="trailing" secondItem="5xr-bw-0aR" secondAttribute="trailing" id="8Ut-mS-Ov6"/>
+<constraint firstItem="U0l-Vv-wvH" firstAttribute="bottom" secondItem="5xr-bw-0aR" secondAttribute="bottom" id="McD-Fw-szX"/>
+</constraints>
+</view>
+</viewController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="5Se-Eu-Bbw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="2400" y="0"/>
+</scene>
+</scenes>
+<resources>
+<image name="Logo" width="104" height="104"/>
+</resources>
+</document>

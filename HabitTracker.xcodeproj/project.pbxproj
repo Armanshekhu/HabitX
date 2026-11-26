@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D81FBFED3A359162AA66663 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0420C7D39AEB3C455B962A93 /* AppDelegate.swift */; };
+		A1B2C3D4E5F600112233AA01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F600112233AA02 /* SceneDelegate.swift */; };
+		A55376DB9A850FBEC27D5DCD /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E5D15B542CECD5967F2F27 /* Theme.swift */; };
+		A1FA3C62E56AE3B21071E697 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9F48C90077B77A78670FF6 /* Icons.swift */; };
+		D504176E0A47983B389AD154 /* IconData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170E199F3E2027BC6AF688FC /* IconData.swift */; };
+		C6AF9C1EEA5502859148C325 /* HabitStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB23AF368FB0114C1AC3DF /* HabitStore.swift */; };
+		0F0D2D27D6F7F5BCB0D3D6C6 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFAD136305CC1AE2CE0B340 /* Components.swift */; };
+		7DFB82349D4575263CCB6EF3 /* ListViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63035EB980275D6F0C7FD39B /* ListViews.swift */; };
+		3E30A85EC9200EE160E1B14E /* HTNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A77F610322E3BE6406476BB /* HTNavigationController.swift */; };
+		A6F6BABC59C83F8D3E43317F /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70BF8088574A51797B1EBFC /* SplashViewController.swift */; };
+		75107C783A7335BF2ED90708 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858E2A18298A21DDC0891607 /* TodayViewController.swift */; };
+		C7F1CCA60972EDDEF633CAFC /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17E6AD54CCD6009C2B42F88 /* StatsViewController.swift */; };
+		E897F4F784969BECD9CCC27F /* NewHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4627998E857D9A5E7688A364 /* NewHabitViewController.swift */; };
+		F175AFF70D81DA451732DBC0 /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99433351F3781B4A65D80F52 /* RewardsViewController.swift */; };
+		121B2F4179DFD18DB91D6010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D35BC73752536E532BE199 /* Assets.xcassets */; };
+		BE29F52170FF2015B5759B93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1CC26BC54CB6EAE39E141C /* Main.storyboard */; };
+		05E35D600519812836725DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4602072193B5B5E628BC02E3 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1B2C3D4E5F600112233AA02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0420C7D39AEB3C455B962A93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72E5D15B542CECD5967F2F27 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		1D9F48C90077B77A78670FF6 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		170E199F3E2027BC6AF688FC /* IconData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconData.swift; sourceTree = "<group>"; };
+		3BAB23AF368FB0114C1AC3DF /* HabitStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitStore.swift; sourceTree = "<group>"; };
+		4EFAD136305CC1AE2CE0B340 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		63035EB980275D6F0C7FD39B /* ListViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViews.swift; sourceTree = "<group>"; };
+		6A77F610322E3BE6406476BB /* HTNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTNavigationController.swift; sourceTree = "<group>"; };
+		B70BF8088574A51797B1EBFC /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		858E2A18298A21DDC0891607 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		E17E6AD54CCD6009C2B42F88 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		4627998E857D9A5E7688A364 /* NewHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHabitViewController.swift; sourceTree = "<group>"; };
+		99433351F3781B4A65D80F52 /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
+		42D35BC73752536E532BE199 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA1CC26BC54CB6EAE39E141C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4602072193B5B5E628BC02E3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7ECA4F52C504D53520A02786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2A57DC1D883FD21FB995169 /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F6F5CC3FCCF73F75AE9CCF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAD58DE7366495DB4650CFEF = {
+			isa = PBXGroup;
+			children = (
+				DB0F6F37EBEB6EA094891243 /* HabitTracker */,
+				86024CAD1E83101D97359D73 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB0F6F37EBEB6EA094891243 /* HabitTracker */ = {
+			isa = PBXGroup;
+			children = (
+				0420C7D39AEB3C455B962A93 /* AppDelegate.swift */,
+				A1B2C3D4E5F600112233AA02 /* SceneDelegate.swift */,
+				72E5D15B542CECD5967F2F27 /* Theme.swift */,
+				1D9F48C90077B77A78670FF6 /* Icons.swift */,
+				170E199F3E2027BC6AF688FC /* IconData.swift */,
+				3BAB23AF368FB0114C1AC3DF /* HabitStore.swift */,
+				4EFAD136305CC1AE2CE0B340 /* Components.swift */,
+				63035EB980275D6F0C7FD39B /* ListViews.swift */,
+				6A77F610322E3BE6406476BB /* HTNavigationController.swift */,
+				B70BF8088574A51797B1EBFC /* SplashViewController.swift */,
+				858E2A18298A21DDC0891607 /* TodayViewController.swift */,
+				E17E6AD54CCD6009C2B42F88 /* StatsViewController.swift */,
+				4627998E857D9A5E7688A364 /* NewHabitViewController.swift */,
+				99433351F3781B4A65D80F52 /* RewardsViewController.swift */,
+				42D35BC73752536E532BE199 /* Assets.xcassets */,
+				EA1CC26BC54CB6EAE39E141C /* Main.storyboard */,
+				4602072193B5B5E628BC02E3 /* LaunchScreen.storyboard */,
+				7ECA4F52C504D53520A02786 /* Info.plist */,
+			);
+			path = HabitTracker;
+			sourceTree = "<group>";
+		};
+		86024CAD1E83101D97359D73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2A57DC1D883FD21FB995169 /* HabitTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42AEFBAE01D2DFD981F7DA7D /* HabitTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26369E1EA4D483984D2043D5 /* Build configuration list for PBXNativeTarget "HabitTracker" */;
+			buildPhases = (
+				F2AB5FB218DA8B84623F4557 /* Sources */,
+				4F6F5CC3FCCF73F75AE9CCF4 /* Frameworks */,
+				55B558C7EF820E6E00E5993B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HabitTracker;
+			productName = HabitTracker;
+			productReference = D2A57DC1D883FD21FB995169 /* HabitTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DC844ABCCFC0D132D087C1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					42AEFBAE01D2DFD981F7DA7D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = DDAF8C69941B6CE3E536EC43 /* Build configuration list for PBXProject "HabitTracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAD58DE7366495DB4650CFEF;
+			productRefGroup = 86024CAD1E83101D97359D73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42AEFBAE01D2DFD981F7DA7D /* HabitTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55B558C7EF820E6E00E5993B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				121B2F4179DFD18DB91D6010 /* Assets.xcassets in Resources */,
+				BE29F52170FF2015B5759B93 /* Main.storyboard in Resources */,
+				05E35D600519812836725DDC /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2AB5FB218DA8B84623F4557 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D81FBFED3A359162AA66663 /* AppDelegate.swift in Sources */,
+				A1B2C3D4E5F600112233AA01 /* SceneDelegate.swift in Sources */,
+				A55376DB9A850FBEC27D5DCD /* Theme.swift in Sources */,
+				A1FA3C62E56AE3B21071E697 /* Icons.swift in Sources */,
+				D504176E0A47983B389AD154 /* IconData.swift in Sources */,
+				C6AF9C1EEA5502859148C325 /* HabitStore.swift in Sources */,
+				0F0D2D27D6F7F5BCB0D3D6C6 /* Components.swift in Sources */,
+				7DFB82349D4575263CCB6EF3 /* ListViews.swift in Sources */,
+				3E30A85EC9200EE160E1B14E /* HTNavigationController.swift in Sources */,
+				A6F6BABC59C83F8D3E43317F /* SplashViewController.swift in Sources */,
+				75107C783A7335BF2ED90708 /* TodayViewController.swift in Sources */,
+				C7F1CCA60972EDDEF633CAFC /* StatsViewController.swift in Sources */,
+				E897F4F784969BECD9CCC27F /* NewHabitViewController.swift in Sources */,
+				F175AFF70D81DA451732DBC0 /* RewardsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		10D16910DF2F283CC5C2CB80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				SDKROOT = iphoneos;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1B411F912C264A3321FE4DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				SDKROOT = iphoneos;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5C36A66C7972530656245C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HabitTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.HabitTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		80A5CE828A6FF6DC91F48B91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HabitTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.HabitTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDAF8C69941B6CE3E536EC43 /* Build configuration list for PBXProject "HabitTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10D16910DF2F283CC5C2CB80 /* Debug */,
+				1B411F912C264A3321FE4DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26369E1EA4D483984D2043D5 /* Build configuration list for PBXNativeTarget "HabitTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5C36A66C7972530656245C3 /* Debug */,
+				80A5CE828A6FF6DC91F48B91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DC844ABCCFC0D132D087C1C /* Project object */;
+}
